@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UFT-8"/>
+	<link rel="stylesheet" href="style.css"/>
+	<title>GIT</title>
+</head>
+<body>
+	<div class="containergeral">
+
+		<div class="resume">
+		IMPORTANTE : O EDITOR DE TEXTO NÃO ACEITA ACENTUAÇÃO
+		</div>
+
+		<div class="config">
+			<div class="titulo">CONFIGURAÇÃO</div>
+			
+				Há o projeto em si, o git cria o repositório do projeto, ou seja, repositório é o mesmo projeto no GIT </br>
+				Para configurar o git depois da instalação, no prompt de comando do window</br>
+				Quando abre há a seguinte informação C:\Users\ro></br>
+				Para configurar e salvar o nome do usuário, digita-se:</br>
+				config --global user.name "Rosemeire Matua"  (enter)</br>
+				Para e-mail: config --global user.email "matuarosemeire@gmail.com" (enter)</br>
+				Para o editor: git --global core.editor sub (enter)</br></br>
+				Para conferir as informações digita-se</br></br>
+				git config user.name, git config user.email </br></br>
+				Com git config --list, apresenta todas as informações salvas</br></br>
+		</div>
+
+		<div class="Comandosgerais"></br>
+			<div class="titulo">Comandos Gerais do Promp</div>
+			Normalmente o PROMPT, abre na pasta do usuário do sistema</br>
+			Para navegar entre pastas dentro do terminal: utilizando o comando - cd -</br>
+			Com - cd C:\ - entra na raiz do HD </br>
+			C:/Users é a pasta padrão de todos os usuários do sistema mesmo que o idioma seja português</br>
+			Dentro da pasta de usuário(User), tem outras pastas como a de Area de Trabalho - Desktop</br>
+			É necessário digitar o caminho completo da pasta</br></br>
+			dir - lista os arquivos que estão na pasta</br>
+			tree /f - faz o organograma das  pastas </br>
+			cd.. - faz voltar uma pasta</br>
+			mkdir - cria uma pasta</br></br>
+			cd C:/wamp/www</br>
+			mkdir modulogit
+			cls - limpa a tela</br></br>
+
+		</div>
+
+		<div class="repositorio"></br>
+			<div class="titulo">REPOSITÓRIO</div>
+			Em modulogit criamos o repositório em si</br>
+			Para iniciar o repositório - git init</br>
+			Com este comando o git cria uma pasta oculta, é só habilitar exibição</br>
+			cd .git, para acessar a pasta; e dir para exibir o conteudo </br>
+			Branch são as versões do sistema em si</br>
+			A versão principal chama-se Master</br>
+			Quando se faz a cópia do sistema, cria-se um novo branch, ou seja, é possível trabalhar em duas versões do mesmo sistema</br></br>
+			COMMIT - é a informação que se passa ao git de tudo que foi feito no sistema</br>
+			Não é backup, o commit só altera o que foi modificado, com no comentário, as explicações das atualizações</br>
+			O arquivo README.md ou txt, com instruções e comentários, configuração, são informações descritivas</br>
+			O comando git status, vai informar o que foi modificado</br>
+			Com esta informação, deve-se adicinar os arquivos a serem modificados que poder ser por:</br>
+			git add (nome do arquivo), para adicionar um a um ou </br>
+			git add -A, para adicionar todos os arquivos </br>
+			Para verificar alteração, git status</br></br>
+		</div>
+
+		<div class="COMMITS">
+			<div class="titulo">COMMITS</div>
+			COMMITS, são o comentários, com comandos git e entre aspas o comentário </div>
+			git commit -m "Primeiro Commit"</div>
+			git log, exibe a lista de todas as modificações naquele branch</div>
+			Depois de criar pastas e alterações, SE NÃO DER COMMIT, a informação vai ficar local</div>
+			Enquanto não der commit, a informação não está disponível no git</div>
+			Cada commit cria um código</br></br>
+		</div>
+
+		<div class="remocao">
+			<div class="titulo">REMOVER ALTERAÇÕES (VOLTAR)</div>
+			O comando - git log - dos commits é verificação do que foi feito, é o histórico</br>
+			Cada commit registra um código, é um número grande mas o que importa são o sete primeiros dígitos</br>
+			Depois do comando git log, será exibido o código e HEAD</br>
+			HEAD - é o branch que se está</br>
+			git branch - é outra forma de saber em qual branch está, ou seja </br>
+			Este comando lista todos os branchs, e o selecionado está com um * </br>
+			git commit -am - adiciona os arquivos e os comentários </br>
+			Há três tipos de reset: -soft, -mixed e -hard</br>
+			--soft, um passo atrás, deixa as alterações sem o commit</br>
+			--mixed, dois passos atrás volta e não prepara para commitar</br>
+			--hard, volta completamente para o commit anterior, inclusive deletando arquivos</br>
+			O RECOMENDADO É O SOFT</br>
+			</br></br>
+			Para voltar à versão anterior:</br>
+			01. copia o código do commit</br>
+			02. digitar: git reset --soft (código inteiro ou 7 primeiros dígitos)</br>
+			03. git log para conferir</br></br>
+		</div>
+
+		<div class="novo branch">
+			<div class="titulo">NOVO BRANCH</div>
+			O branch inicia o sistema do ponto copiado</br>
+			git branch (nome do novo branch) - para criar um novo branch</br>
+			git branch - para conferir</br>
+			Serão exibidos todos os branchs e o * no selecionado, que está sendo trabalhado</br></br>
+		</div>
+
+		<div>
+			<div class="titulo">TROCAR DE BRANCH</div>
+			git checkout (nome do arquivo)</br>
+			git branch - para conferir</br></br>
+
+			git checkout (nome do arquivo) para voltar para outro arquivo</br></br>
+			A partir de então, haverão dois históricos, um histórico de cada branch</br></br>
+			Com branchs diferentes - ode-se manter versões diferentes do sistema operando simultaneamente</br></br>
+		</div>
+			<div class="titulo">CONTROLE DE COMMITS</div>
+			git diff - exibe a íntegra das alterações
+		<div>
+
+		</div>
+
+	</div>
+</body>
+</html>
